@@ -27,7 +27,7 @@ int myCompara(void *data1, void *data2)
 }
 
 //测试
-void test01()
+void test()
 {
 	//创建动态数组
 	struct dynamicArray *arr = init_DynamicArray(5);
@@ -73,7 +73,7 @@ void test01()
 
 int main()
 {
-	test01();
+	test();
 	system("pause");
 	return 0;
 }
