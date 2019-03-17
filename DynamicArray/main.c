@@ -34,7 +34,7 @@ void test01()
 
 	printf("插入前容量：%d\n", arr->m_capacity);
 
-	//准备5个元素
+	//准备6个元素
 	struct Person p1 = { "aa",10 };
 	struct Person p2 = { "bb",10 };
 	struct Person p3 = { "cc",10 };
