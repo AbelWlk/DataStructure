@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{1241CCFE-BD25-4590-BAF1-0CFBF748EF76}</ProjectGuid>
-    <RootNamespace>SinglyLinkedList</RootNamespace>
+    <ProjectGuid>{BA0F374D-41E1-4869-9104-D1263A30B732}</ProjectGuid>
+    <RootNamespace>DynamicArray01</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,8 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList00.c" />
-    <ClCompile Include="LinkedList01.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

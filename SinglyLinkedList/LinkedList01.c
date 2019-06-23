@@ -147,11 +147,6 @@ void destory_LinkList(LinkList list)
 
 
 
-
-
-
-
-
 //≤‚ ‘
 struct Person
 {
