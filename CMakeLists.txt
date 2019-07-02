@@ -3,4 +3,9 @@ project(DataStructure C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(DataStructure main.c)
+include_directories(${PROJECT_SOURCE_DIR})
+
+#------------------LinearList-------------------
+set(seqList LinearList/SeqList.c)
+
+add_executable(seqList ${seqList})

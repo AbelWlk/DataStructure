@@ -1,4 +1,3 @@
-#include "DynamicArray.h"
 
 //初始化数组
 struct dynamicArray * init_DynamicArray(int capacity)
