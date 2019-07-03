@@ -21,9 +21,9 @@ int Length(SeqList seqList) {
 }
 
 /*获取指定元素位置*/
-int LocateElem(SeqList seqList, void *data) {
+int LocateElem(SeqList seqList, void *data,bool(*myCompara)(void *,void *)) {
     for (int i = 0; i < seqList.Size; i++) {
-        if (data == seqList.Data[i]) {
+        if (myCompara(data,seqList.Data[i])) {
             return i + 1;
             break;
         }
@@ -83,5 +83,4 @@ void Destory(SeqList *seqList) {
     }
     free(seqList);
     seqList = NULL;
-    s
 }

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/seqList.dir/LinearList/main.c.obj"
   "CMakeFiles/seqList.dir/LinearList/SeqList.c.obj"
   "seqList.pdb"
   "seqList.exe"

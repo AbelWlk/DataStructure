@@ -82,6 +82,9 @@
 		<Unit filename="F:/Git/Clion/DataStructure/LinearList/SeqList.h">
 			<Option target="seqList"/>
 		</Unit>
+		<Unit filename="F:/Git/Clion/DataStructure/LinearList/main.c">
+			<Option target="seqList"/>
+		</Unit>
 		<Unit filename="F:/Git/Clion/DataStructure/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

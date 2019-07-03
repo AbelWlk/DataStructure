@@ -22,7 +22,7 @@ bool IsEmpty(SeqList seqList);
 int Length(SeqList seqList);
 
 /*获取指定元素位置*/
-int LocateElem(SeqList seqList, void *data);
+int LocateElem(SeqList seqList, void *data,bool(*myCompara)(void *,void *));
 
 /*根据位置查找指定元素*/
 void *GetElem(SeqList seqList, int position);

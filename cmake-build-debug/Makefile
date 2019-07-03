@@ -149,6 +149,33 @@ LinearList/SeqList.c.s:
 	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/SeqList.c.s
 .PHONY : LinearList/SeqList.c.s
 
+LinearList/main.obj: LinearList/main.c.obj
+
+.PHONY : LinearList/main.obj
+
+# target to build an object file
+LinearList/main.c.obj:
+	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/main.c.obj
+.PHONY : LinearList/main.c.obj
+
+LinearList/main.i: LinearList/main.c.i
+
+.PHONY : LinearList/main.i
+
+# target to preprocess a source file
+LinearList/main.c.i:
+	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/main.c.i
+.PHONY : LinearList/main.c.i
+
+LinearList/main.s: LinearList/main.c.s
+
+.PHONY : LinearList/main.s
+
+# target to generate assembly for a file
+LinearList/main.c.s:
+	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/main.c.s
+.PHONY : LinearList/main.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,6 +188,9 @@ help:
 	@echo ... LinearList/SeqList.obj
 	@echo ... LinearList/SeqList.i
 	@echo ... LinearList/SeqList.s
+	@echo ... LinearList/main.obj
+	@echo ... LinearList/main.i
+	@echo ... LinearList/main.s
 .PHONY : help
 
 
