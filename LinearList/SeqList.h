@@ -37,7 +37,7 @@ void *ListDelete(SeqList *seqList, int position);
 void PrintLsit(SeqList seqList, void(*myPrint)(void *));
 
 /*Ïú»ÙË³Ðò±í*/
-void Destory(SeqList *seqList);
+void Destroy(SeqList *seqList);
 
 
 #endif //DATASTRUCTURE_SEQLIST_H

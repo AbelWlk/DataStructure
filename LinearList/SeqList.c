@@ -21,11 +21,10 @@ int Length(SeqList seqList) {
 }
 
 /*获取指定元素位置*/
-int LocateElem(SeqList seqList, void *data,bool(*myCompara)(void *,void *)) {
+int LocateElem(SeqList seqList, void *data,bool(*myCompare)(void *,void *)) {
     for (int i = 0; i < seqList.Size; i++) {
-        if (myCompara(data,seqList.Data[i])) {
+        if (myCompare(data,seqList.Data[i])) {
             return i + 1;
-            break;
         }
     }
     return -1;
@@ -76,11 +75,10 @@ void PrintLsit(SeqList seqList, void(*myPrint)(void *)) {
 }
 
 /*销毁顺序表*/
-void Destory(SeqList *seqList) {
+void Destroy(SeqList *seqList) {
     if (seqList->Data != NULL) {
         free(seqList->Data);
         seqList->Data = NULL;
     }
     free(seqList);
-    seqList = NULL;
 }
