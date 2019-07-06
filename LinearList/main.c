@@ -79,7 +79,6 @@ bool Del_Min(SeqList *seqList, const int *value) {
 
 //逆置所有元素
 void Reverse(SeqList *seqList) {
-
     void *tmp;
     for (int i = 0; i < seqList->Size / 2; ++i) {
         tmp = seqList->Data[i];
@@ -100,6 +99,126 @@ void DeleteByValue(SeqList *seqList, int x) {
     seqList->Size = k;
 }
 
+//在有序顺序表中
+bool DelByRange(SeqList *seqList, int s, int t) {
+    int i, j;
+    if (s > t || seqList->Size == 0)
+        return false;
+    for (i = 0; i < seqList->Size && *((int *) seqList->Data[i]) < s; ++i);//寻找大于等于s的第一个元素
+
+    if (i >= seqList->Size)
+        return false;
+
+    for (j = i; j < seqList->Size && *((int *) seqList->Data[i]) <= t; j++);//寻找值大于t的第一个元素
+
+    for (; j < seqList->Size; i++, j++) {
+        seqList->Data[i] = seqList->Data[j];//依次迁移
+    }
+
+    seqList->Size = i;
+    return true;
+}
+
+//在顺序表中
+bool DelByRange02(SeqList *seqList, int s, int t) {
+
+    int i, k = 0;
+    if (seqList->Size == 0 || s >= t)
+        return false;
+    for (i = 0; i < seqList->Size; i++) {
+        if (*((int *) seqList->Data[i]) >= s && *((int *) seqList->Data[i]) <= t) {
+            k++;
+        } else {
+            seqList->Data[i - k] = seqList->Data[i];//当前元素向前移动k个位置
+        }
+    }
+    seqList->Size -= k;
+    return true;
+}
+
+//从有序顺序表中删除所有重复的元素，最终留下的元素各不相同
+bool DelSame(SeqList *seqList) {
+    if (seqList->Size == 0)
+        return false;
+    int i, j;//i存储第一个不相同的元素
+    for (i = 0, j = 1; j < seqList->Size; j++) {
+        if (*((int *) seqList->Data[i]) != *((int *) seqList->Data[j]))//查找下一个值不相同的元素
+        {
+            seqList->Data[++i] = seqList->Data[j];//找到后元素后裔
+        }
+    }
+    seqList->Size = i + 1;
+    return true;
+}
+
+//两个有序顺序表合并
+bool Merge(SeqList A, SeqList B, SeqList *C) {
+    if (A.Size + B.Size > C->MaxSize)
+        return false;
+    int i = 0, j = 0, k = 0;
+    while (i < A.Size && j < B.Size) {
+        if (*((int *) A.Data[i]) <= *((int *) B.Data[j])) {
+            C->Data[k++] = A.Data[i++];
+        } else {
+            C->Data[k++] = B.Data[j++];
+        }
+    }
+    while (i < A.Size) {
+        C->Data[k++] = A.Data[i++];
+    }
+    while (j < B.Size) {
+        C->Data[k++] = B.Data[j++];
+    }
+    C->Size = k;
+    return true;
+}
+
+//将后n个元素移动到最前面，元素顺序不变
+void Reverse02(SeqList *seqList, int left, int right) {
+    if (left > right || right > seqList->Size)
+        return;
+    int mid = (left + right) / 2;
+    for (int i = 0; i <= mid - left; ++i) {
+        void *tmp = seqList->Data[left + i];
+        seqList->Data[left + i] = seqList->Data[right - i];
+        seqList->Data[right - i] = tmp;
+    }
+}
+
+void ExChange(SeqList *seqList, int m, int n) {
+    Reverse02(seqList, 0, m + n - 1);
+    Reverse02(seqList, 0, n - 1);
+    Reverse02(seqList, n, m + n - 1);
+}
+
+//有序顺序表中查找x,找到则将其与后续交换；找不到则插入，并保持有序
+void SearchExChangeInsert(SeqList *seqList, int x) {
+    int low = 0, high = seqList->Size - 1, mid;
+    while (low <= high) {
+        mid = (low + high) / 2;
+        if (*((int *) seqList->Data[mid]) < x) {
+            break;//找到x退出虚幻
+        } else if (*((int *) seqList->Data[mid]) < x) {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+        if (*((int *) seqList->Data[mid]) == x && mid != seqList->Size - 1) {
+            //找到x且x不是最后一个元素 执行交换
+            void *tmp = seqList->Data[mid];
+            seqList->Data[mid] = seqList->Data[mid + 1];
+            seqList->Data[mid + 1] = tmp;
+        }
+        if (low > high)//没找到，按顺序插入
+        {
+            for (int i = seqList->Size - 1; i > high; i--) {
+                seqList->Data[i + 1] = seqList->Data[i];
+            }
+            *((int *) seqList->Data[high + 1]) = x;
+        }
+    }
+}
+
 
 int main() {
     SeqList seqList;
@@ -112,7 +231,7 @@ int main() {
     ListInsert(&seqList, 5, &e);
     PrintLsit(seqList, print);
 
-    DeleteByValue(&seqList,7);
+    DeleteByValue(&seqList, 7);
 
     PrintLsit(seqList, print);
 
