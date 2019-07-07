@@ -219,21 +219,134 @@ void SearchExChangeInsert(SeqList *seqList, int x) {
     }
 }
 
+//一维数组循环左移p个位置
+void Reverse03(int R[], int from, int to) {
+    int i, temp;
+    for (i = 0; i < (to - from + 1) / 2; i++) {
+        temp = R[from + i];
+        R[from + i] = R[to - i];
+        R[to - i] = R[from + i];
+    }
+}
+
+void Converse(int R[], int n, int p) {
+    Reverse03(R, 0, p - 1);
+    Reverse03(R, p, n - 1);
+    Reverse03(R, 0, n - 1);
+}
+
+//求两个顺序序列的中位数
+int MidNum(const int a[], const int b[], int n) {
+    int i = 0, j = 0;
+    for (int k = 0; k < n - 1; k++) {
+        if (a[i] < b[j]) {
+            i++;
+        } else if (a[i] > b[j]) {
+            j++;
+        } else {
+            i++;
+            j++;
+            k++;
+        }
+    }
+    if ((i + j) > n - 1) {
+        i--;//return a[i--];
+        j--;//or return b[j--];
+    }
+    return a[i] > b[j] ? b[j] : a[i];
+}
+
+int MidNum02(const int a[], const int b[], int n) {
+    int s1 = 0, d1 = n - 1, m1, s2 = 0, d2 = n - 1, m2;//分别表示ab的头尾及中位数
+    while (s1 != d1 || s2 != d2) {
+        m1 = (s1 + d1) / 2;
+        m2 = (s2 + d2) / 2;
+        if (a[m1] == b[m2])
+            return a[m1];//两个中位数相等,直接返回其中任意一个
+        if (a[m1] < b[m2]) {
+            if ((s1 + d1) % 2 == 0)//若元素个数为基数
+            {
+                s1 = m1;
+                d2 = m2;
+            } else {
+                s1 = m1 + 1;
+                d2 = m2;
+            }
+        } else {
+            if ((s2 + d2) % 2 == 0) {
+                d1 = m1;
+                s2 = m2;
+            } else {
+                d1 = m1;
+                s2 = m2 + 1;
+            }
+        }
+    }
+    return a[s1] < b[s2] ? a[s1] : b[s2];
+}
+
+//找出主元素 1.先找出出现次数可能最多的一个数 2.判断该数出现的次数是否超过一半
+int MajorityNum(const int a[], int n) {
+    int i, c, count = 1;
+    c = a[0];
+    for (i = 1; i < n; i++) {
+        if (a[i] == c)
+            count++;
+        else {
+            if (count > 0)
+                count--;
+            else {
+                c = a[i];
+                count = 1;
+            }
+        }
+    }
+    if (count > 0) {
+        for (i = count = 0; i < n; i++) {
+            if (a[i] == c)
+                count++;
+        }
+    }
+    if (count > n / 2)
+        return c;
+    else
+        return -1;
+}
+
+//未出现的最小正整数
+int FindMissMin(int a[], int n) {
+    int i, *b;
+    b = malloc(sizeof(int) * n);
+    memset(b, 0, sizeof(int) * n);
+    for (i = 0; i < n; i++) {
+        if (a[i] > 0 && a[i] <= n) {
+            b[a[i] - 1] = 1;
+        }
+    }
+    for (i = 0; i < n; i++) {
+        if (b[i] == 0) break;
+    }
+    return i + 1;
+}
 
 int main() {
-    SeqList seqList;
-    InitList(&seqList);
-    int a = 10, b = 5, c = 6, d = 7, e = 9;
-    ListInsert(&seqList, 1, &a);
-    ListInsert(&seqList, 2, &b);
-    ListInsert(&seqList, 3, &c);
-    ListInsert(&seqList, 4, &d);
-    ListInsert(&seqList, 5, &e);
-    PrintLsit(seqList, print);
+//    SeqList seqList;
+////    InitList(&seqList);
+////    int a = 10, b = 5, c = 6, d = 7, e = 9;
+////    ListInsert(&seqList, 1, &a);
+////    ListInsert(&seqList, 2, &b);
+////    ListInsert(&seqList, 3, &c);
+////    ListInsert(&seqList, 4, &d);
+////    ListInsert(&seqList, 5, &e);
+////    PrintLsit(seqList, print);
+////
+////    DeleteByValue(&seqList, 7);
+////
+////    PrintLsit(seqList, print);
 
-    DeleteByValue(&seqList, 7);
-
-    PrintLsit(seqList, print);
+    int a[] = {1, 2, 3, 4, 5};
+    int b[] = {4, 5, 7, 8, 9};
+    printf("%d", MidNum(a, b, 5));
 
     return 0;
 }
