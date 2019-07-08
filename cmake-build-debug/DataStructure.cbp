@@ -76,13 +76,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="F:/Git/Clion/DataStructure/LinearList/LinkList.c">
+			<Option target="seqList"/>
+		</Unit>
+		<Unit filename="F:/Git/Clion/DataStructure/LinearList/LinkList.h">
+			<Option target="seqList"/>
+		</Unit>
 		<Unit filename="F:/Git/Clion/DataStructure/LinearList/SeqList.c">
 			<Option target="seqList"/>
 		</Unit>
 		<Unit filename="F:/Git/Clion/DataStructure/LinearList/SeqList.h">
 			<Option target="seqList"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/LinearList/main.c">
+		<Unit filename="F:/Git/Clion/DataStructure/LinearList/SeqList_main.c">
 			<Option target="seqList"/>
 		</Unit>
 		<Unit filename="F:/Git/Clion/DataStructure/CMakeLists.txt">

@@ -122,6 +122,33 @@ seqList/fast:
 	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/build
 .PHONY : seqList/fast
 
+LinearList/LinkList.obj: LinearList/LinkList.c.obj
+
+.PHONY : LinearList/LinkList.obj
+
+# target to build an object file
+LinearList/LinkList.c.obj:
+	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/LinkList.c.obj
+.PHONY : LinearList/LinkList.c.obj
+
+LinearList/LinkList.i: LinearList/LinkList.c.i
+
+.PHONY : LinearList/LinkList.i
+
+# target to preprocess a source file
+LinearList/LinkList.c.i:
+	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/LinkList.c.i
+.PHONY : LinearList/LinkList.c.i
+
+LinearList/LinkList.s: LinearList/LinkList.c.s
+
+.PHONY : LinearList/LinkList.s
+
+# target to generate assembly for a file
+LinearList/LinkList.c.s:
+	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/LinkList.c.s
+.PHONY : LinearList/LinkList.c.s
+
 LinearList/SeqList.obj: LinearList/SeqList.c.obj
 
 .PHONY : LinearList/SeqList.obj
@@ -149,32 +176,32 @@ LinearList/SeqList.c.s:
 	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/SeqList.c.s
 .PHONY : LinearList/SeqList.c.s
 
-LinearList/main.obj: LinearList/main.c.obj
+LinearList/SeqList_main.obj: LinearList/SeqList_main.c.obj
 
-.PHONY : LinearList/main.obj
+.PHONY : LinearList/SeqList_main.obj
 
 # target to build an object file
-LinearList/main.c.obj:
-	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/main.c.obj
-.PHONY : LinearList/main.c.obj
+LinearList/SeqList_main.c.obj:
+	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/SeqList_main.c.obj
+.PHONY : LinearList/SeqList_main.c.obj
 
-LinearList/main.i: LinearList/main.c.i
+LinearList/SeqList_main.i: LinearList/SeqList_main.c.i
 
-.PHONY : LinearList/main.i
+.PHONY : LinearList/SeqList_main.i
 
 # target to preprocess a source file
-LinearList/main.c.i:
-	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/main.c.i
-.PHONY : LinearList/main.c.i
+LinearList/SeqList_main.c.i:
+	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/SeqList_main.c.i
+.PHONY : LinearList/SeqList_main.c.i
 
-LinearList/main.s: LinearList/main.c.s
+LinearList/SeqList_main.s: LinearList/SeqList_main.c.s
 
-.PHONY : LinearList/main.s
+.PHONY : LinearList/SeqList_main.s
 
 # target to generate assembly for a file
-LinearList/main.c.s:
-	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/main.c.s
-.PHONY : LinearList/main.c.s
+LinearList/SeqList_main.c.s:
+	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/SeqList_main.c.s
+.PHONY : LinearList/SeqList_main.c.s
 
 # Help Target
 help:
@@ -185,12 +212,15 @@ help:
 	@echo ... seqList
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... LinearList/LinkList.obj
+	@echo ... LinearList/LinkList.i
+	@echo ... LinearList/LinkList.s
 	@echo ... LinearList/SeqList.obj
 	@echo ... LinearList/SeqList.i
 	@echo ... LinearList/SeqList.s
-	@echo ... LinearList/main.obj
-	@echo ... LinearList/main.i
-	@echo ... LinearList/main.s
+	@echo ... LinearList/SeqList_main.obj
+	@echo ... LinearList/SeqList_main.i
+	@echo ... LinearList/SeqList_main.s
 .PHONY : help
 
 

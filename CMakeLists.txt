@@ -6,6 +6,6 @@ set(CMAKE_C_STANDARD 99)
 include_directories(${PROJECT_SOURCE_DIR})
 
 #------------------LinearList-------------------
-set(seqList LinearList/main.c LinearList/SeqList.c)
+set(seqList LinearList/SeqList_main.c LinearList/SeqList.c LinearList/LinkList.c LinearList/LinkList.h)
 
 add_executable(seqList ${seqList})
