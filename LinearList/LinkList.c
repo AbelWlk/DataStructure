@@ -5,8 +5,8 @@
 
 void Init_LinkList(LinkList *linkList) {
     *linkList = malloc(sizeof(struct LinkNode));
-    (*linkList)->Head->Next = NULL;
-    (*linkList)->Tail->Next = NULL;
+    (*linkList)->Head = NULL;
+    (*linkList)->Tail = NULL;
     (*linkList)->Length = 0;
 }
 
@@ -15,10 +15,10 @@ void HeadInsert(LinkList linkList, int data) {
     s->Data = data;
     s->Next = NULL;
     if (linkList->Length == 0) {
-        linkList->Head->Next = linkList->Tail->Next = s;
+        linkList->Head = linkList->Tail = s;
     } else {
-        s->Next = linkList->Head->Next;
-        linkList->Head->Next = s;
+        s->Next = linkList->Head;
+        linkList->Head = s;
     }
     linkList->Length++;
 }
@@ -28,17 +28,17 @@ void TailInsert(LinkList linkList, int data) {
     s->Data = data;
     s->Next = NULL;
     if (linkList->Length == 0) {
-        linkList->Head->Next = linkList->Tail->Next = s;
+        linkList->Head = linkList->Tail = s;
     } else {
-        linkList->Tail->Next->Next=s;
         linkList->Tail->Next=s;
+        linkList->Tail=s;
     }
     linkList->Length++;
 }
 
 LNode *GetElem(LinkList linkList, int index) {
     int i = 1;
-    LNode *p = linkList->Head->Next;
+    LNode *p = linkList->Head;
     if (index == 0)
         return linkList->Head;
     if (index < 1)
@@ -51,7 +51,7 @@ LNode *GetElem(LinkList linkList, int index) {
 }
 
 LNode *LocateElem(LinkList linkList, int value) {
-    LNode *p = linkList->Head->Next;
+    LNode *p = linkList->Head;
     while (p && p->Data != value)
         p = p->Next;
     return p;

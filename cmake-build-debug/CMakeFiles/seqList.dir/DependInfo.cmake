@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "F:/Git/Clion/DataStructure/LinearList/LinkList.c" "F:/Git/Clion/DataStructure/cmake-build-debug/CMakeFiles/seqList.dir/LinearList/LinkList.c.obj"
   "F:/Git/Clion/DataStructure/LinearList/SeqList.c" "F:/Git/Clion/DataStructure/cmake-build-debug/CMakeFiles/seqList.dir/LinearList/SeqList.c.obj"
   "F:/Git/Clion/DataStructure/LinearList/SeqList_main.c" "F:/Git/Clion/DataStructure/cmake-build-debug/CMakeFiles/seqList.dir/LinearList/SeqList_main.c.obj"
   )

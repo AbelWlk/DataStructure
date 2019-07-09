@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = F:\Git\Clion\DataStructure\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"D:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,13 +122,26 @@ seqList/fast:
 	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/build
 .PHONY : seqList/fast
 
+#=============================================================================
+# Target rules for targets named linkList
+
+# Build rule for target.
+linkList: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 linkList
+.PHONY : linkList
+
+# fast build rule for target.
+linkList/fast:
+	$(MAKE) -f CMakeFiles\linkList.dir\build.make CMakeFiles/linkList.dir/build
+.PHONY : linkList/fast
+
 LinearList/LinkList.obj: LinearList/LinkList.c.obj
 
 .PHONY : LinearList/LinkList.obj
 
 # target to build an object file
 LinearList/LinkList.c.obj:
-	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/LinkList.c.obj
+	$(MAKE) -f CMakeFiles\linkList.dir\build.make CMakeFiles/linkList.dir/LinearList/LinkList.c.obj
 .PHONY : LinearList/LinkList.c.obj
 
 LinearList/LinkList.i: LinearList/LinkList.c.i
@@ -137,7 +150,7 @@ LinearList/LinkList.i: LinearList/LinkList.c.i
 
 # target to preprocess a source file
 LinearList/LinkList.c.i:
-	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/LinkList.c.i
+	$(MAKE) -f CMakeFiles\linkList.dir\build.make CMakeFiles/linkList.dir/LinearList/LinkList.c.i
 .PHONY : LinearList/LinkList.c.i
 
 LinearList/LinkList.s: LinearList/LinkList.c.s
@@ -146,8 +159,35 @@ LinearList/LinkList.s: LinearList/LinkList.c.s
 
 # target to generate assembly for a file
 LinearList/LinkList.c.s:
-	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/LinkList.c.s
+	$(MAKE) -f CMakeFiles\linkList.dir\build.make CMakeFiles/linkList.dir/LinearList/LinkList.c.s
 .PHONY : LinearList/LinkList.c.s
+
+LinearList/LinkList_main.obj: LinearList/LinkList_main.c.obj
+
+.PHONY : LinearList/LinkList_main.obj
+
+# target to build an object file
+LinearList/LinkList_main.c.obj:
+	$(MAKE) -f CMakeFiles\linkList.dir\build.make CMakeFiles/linkList.dir/LinearList/LinkList_main.c.obj
+.PHONY : LinearList/LinkList_main.c.obj
+
+LinearList/LinkList_main.i: LinearList/LinkList_main.c.i
+
+.PHONY : LinearList/LinkList_main.i
+
+# target to preprocess a source file
+LinearList/LinkList_main.c.i:
+	$(MAKE) -f CMakeFiles\linkList.dir\build.make CMakeFiles/linkList.dir/LinearList/LinkList_main.c.i
+.PHONY : LinearList/LinkList_main.c.i
+
+LinearList/LinkList_main.s: LinearList/LinkList_main.c.s
+
+.PHONY : LinearList/LinkList_main.s
+
+# target to generate assembly for a file
+LinearList/LinkList_main.c.s:
+	$(MAKE) -f CMakeFiles\linkList.dir\build.make CMakeFiles/linkList.dir/LinearList/LinkList_main.c.s
+.PHONY : LinearList/LinkList_main.c.s
 
 LinearList/SeqList.obj: LinearList/SeqList.c.obj
 
@@ -210,11 +250,15 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... seqList
-	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... linkList
+	@echo ... edit_cache
 	@echo ... LinearList/LinkList.obj
 	@echo ... LinearList/LinkList.i
 	@echo ... LinearList/LinkList.s
+	@echo ... LinearList/LinkList_main.obj
+	@echo ... LinearList/LinkList_main.i
+	@echo ... LinearList/LinkList_main.s
 	@echo ... LinearList/SeqList.obj
 	@echo ... LinearList/SeqList.i
 	@echo ... LinearList/SeqList.s
