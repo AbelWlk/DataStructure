@@ -232,19 +232,193 @@ void MergeList(LinkList listA, LinkList listB) {
         }
     }
 
-    if(pa)
-        pb=pa;
+    if (pa)
+        pb = pa;
 
-    while (pb!=NULL)
-    {
-        tmp=pb->Next;
-        pb->Next=new->Next;
-        new->Next=pb;
-        pb=tmp;
+    while (pb != NULL) {
+        tmp = pb->Next;
+        pb->Next = new->Next;
+        new->Next = pb;
+        pb = tmp;
     }
 
     free(listB);
 }
+
+//14.设计新链表指向两个递增有序单链表（带头节点）的公共节点，不破快原本节点
+void Get_Common(LinkList listA, LinkList listB) {
+    PtrNode pa = listA->Head->Next, pb = listB->Head->Next, pc, q;
+    LinkList listC = malloc(sizeof(struct LinkNode));
+    pc = listC->Head;
+    while (pa && pb) {
+        if (pa->Data < pb->Data) {
+            pa = pa->Next;
+        } else if (pa->Data > pb->Data) {
+            pb = pb->Next;
+        } else {
+            q = malloc(sizeof(LNode));
+            q->Data = pa->Data;
+            pc->Next = q;
+            pc = q;
+            pa = pa->Next;
+            pb = pb->Next;
+        }
+    }
+    pc->Next = NULL;
+}
+
+//15.两个单链表求公共节点，存放于其中一个链表
+LinkList Union(LinkList listA, LinkList listB) {
+    PtrNode pa = listA->Head->Next, pb = listB->Head->Next, pc = listA->Head, tmp;
+    while (pa && pb) {
+        if (pa->Data == pb->Data) {
+            pc->Next = pa;
+            pc = pa;
+            pa = pa->Next;
+            tmp = pb;
+            pb = pb->Next;
+            free(tmp);
+        } else if (pa->Data < pb->Data) {
+            tmp = pa;
+            pa = pa->Next;
+            free(tmp);
+        } else {
+            tmp = pb;
+            pb = pb->Next;
+            free(tmp);
+        }
+    }
+
+    while (pa) {
+        tmp = pa;
+        pa = pa->Next;
+        free(pa);
+    }
+    while (pb) {
+        tmp = pb;
+        pb = pb->Next;
+        free(pb);
+    }
+    pc->Next = NULL;
+    free(listB);
+    return listA;
+}
+
+//16.两个整数单链表，判断后者是否为前者的连续子序列
+bool IsSubList(LinkList listA, LinkList listB) {
+    PtrNode pa = listA->Head, pb = listB->Head, pre = pa;
+    while (pa && pb) {
+        if (pa->Data == pb->Data) {
+            pa = pa->Next;
+            pb = pb->Next;
+        } else {
+            pre = pre->Next;
+            pa = pre;
+            pb = listB->Head;
+        }
+    }
+    if (pb == NULL)
+        return true;//b比较结束，说明是a的子序列
+    else {
+        return false;
+    }
+}
+
+//17.判断带头节点的双循环链表是个否对称{双循环链表懒得实现}
+//18.两个循环单链表，b连接到a之后，保持循环
+LinkList Link(LinkList listA, LinkList listB) {
+    PtrNode pa = listA->Head, pb = listB->Head;
+    while (pa->Next != listA->Head)//循环找到最后节点
+        pa = pa->Next;
+    while (pb->Next != listB->Head)//循环找到最后节点
+        pb = pb->Next;
+    pa->Next = listB->Head;
+    pb->Next = listA->Head;
+    return listA;
+}
+
+//19.循环单链表，按最小节点输出并删除 直到表空
+void Del_Min02(LinkList list) {
+    PtrNode p, pre, minp, minpre;
+    while (list->Head->Next != list->Head) {
+        p = list->Head->Next;
+        pre = list->Head;
+        minp = p;
+        minpre = pre;
+        while (p != list->Head) {
+            if (p->Data < minp->Data) {
+                minp = p;
+                minpre = pre;
+            }
+            pre = p;
+            p = p->Next;
+        }
+        printf("%d\n", minp->Data);
+        minpre->Next = minp->Next;//断开/删除
+        free(minp);
+    }
+    free(list);
+}
+
+//20.按照访问频度排序（双链表懒得实现）
+//21.带头节点单链表按位置查找倒数第几个节点
+int Search(LinkList list, int k) {
+    PtrNode p = list->Head->Next, q = list->Head->Next;
+    int count = 0;
+    while (p != NULL) {
+        if (count < k)
+            count++;
+        else
+            q = q->Next;
+        p = p->Next;
+    }
+    if (count < k)
+        return 0;
+    else {
+        printf("%d\n", q->Data);
+        return 1;
+    }
+}
+
+//22.求两个单词共同后缀的起始地址（两个单链表，求共同节点起始节点）
+PtrNode find_addr(LinkList listA, LinkList listB) {
+    int m = Length(listA), n = Length(listB);
+    PtrNode pa, pb;
+    for (pa = listA->Head->Next; m > n; m--)//若m>n,则使a指向m-n+1个节点
+        pa = pa->Next;
+    for (pb = listB->Head->Next; m < n; n--)//同上理
+        pb = pb->Next;
+    while (pa->Next != NULL && pa->Next != pb->Next) {
+        pa = pa->Next;
+        pb = pb->Next;
+    }
+    return pa->Next;
+}
+
+//23.删除绝对值相同的点，乱序
+void Del_Same02(LinkList list, int n) {
+    PtrNode p = list->Head, r;
+    int *q, m;
+    q = malloc(sizeof(int) * n + 1);
+    for(int i=0;i<n+1;i++){
+        q[i]=0;
+    }
+    while (p->Next!=NULL)
+    {
+        m=p->Next->Data>0?p->Next->Data:-p->Next->Data;
+        if(q[m]==0)
+        {
+            q[m]=1;
+            p=p->Next;
+        } else{
+            r=p->Next;
+            p->Next=r->Next;
+            free(r);
+        }
+    }
+    free(q);
+}
+
 
 int main() {
 
