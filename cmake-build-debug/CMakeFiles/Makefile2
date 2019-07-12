@@ -64,6 +64,43 @@ CMAKE_SOURCE_DIR = F:\Git\Clion\DataStructure
 CMAKE_BINARY_DIR = F:\Git\Clion\DataStructure\cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/seqStack.dir
+
+# All Build rule for target.
+CMakeFiles/seqStack.dir/all:
+	$(MAKE) -f CMakeFiles\seqStack.dir\build.make CMakeFiles/seqStack.dir/depend
+	$(MAKE) -f CMakeFiles\seqStack.dir\build.make CMakeFiles/seqStack.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles --progress-num=7,8,9 "Built target seqStack"
+.PHONY : CMakeFiles/seqStack.dir/all
+
+# Include target in all.
+all: CMakeFiles/seqStack.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/seqStack.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles 3
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/seqStack.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/seqStack.dir/rule
+
+# Convenience name for target.
+seqStack: CMakeFiles/seqStack.dir/rule
+
+.PHONY : seqStack
+
+# clean rule for target.
+CMakeFiles/seqStack.dir/clean:
+	$(MAKE) -f CMakeFiles\seqStack.dir\build.make CMakeFiles/seqStack.dir/clean
+.PHONY : CMakeFiles/seqStack.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/seqStack.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/seqList.dir
 
 # All Build rule for target.

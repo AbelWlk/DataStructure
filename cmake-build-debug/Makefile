@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named seqStack
+
+# Build rule for target.
+seqStack: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 seqStack
+.PHONY : seqStack
+
+# fast build rule for target.
+seqStack/fast:
+	$(MAKE) -f CMakeFiles\seqStack.dir\build.make CMakeFiles/seqStack.dir/build
+.PHONY : seqStack/fast
+
+#=============================================================================
 # Target rules for targets named seqList
 
 # Build rule for target.
@@ -243,12 +256,67 @@ LinearList/SeqList_main.c.s:
 	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/SeqList_main.c.s
 .PHONY : LinearList/SeqList_main.c.s
 
+Stack&Queue/SeqStack.obj: Stack&Queue/SeqStack.c.obj
+
+.PHONY : Stack&Queue/SeqStack.obj
+
+# target to build an object file
+Stack&Queue/SeqStack.c.obj:
+	$(MAKE) -f CMakeFiles\seqStack.dir\build.make "CMakeFiles/seqStack.dir/Stack&Queue/SeqStack.c.obj"
+.PHONY : Stack&Queue/SeqStack.c.obj
+
+Stack&Queue/SeqStack.i: Stack&Queue/SeqStack.c.i
+
+.PHONY : Stack&Queue/SeqStack.i
+
+# target to preprocess a source file
+Stack&Queue/SeqStack.c.i:
+	$(MAKE) -f CMakeFiles\seqStack.dir\build.make "CMakeFiles/seqStack.dir/Stack&Queue/SeqStack.c.i"
+.PHONY : Stack&Queue/SeqStack.c.i
+
+Stack&Queue/SeqStack.s: Stack&Queue/SeqStack.c.s
+
+.PHONY : Stack&Queue/SeqStack.s
+
+# target to generate assembly for a file
+Stack&Queue/SeqStack.c.s:
+	$(MAKE) -f CMakeFiles\seqStack.dir\build.make "CMakeFiles/seqStack.dir/Stack&Queue/SeqStack.c.s"
+.PHONY : Stack&Queue/SeqStack.c.s
+
+Stack&Queue/SeqStackMain.obj: Stack&Queue/SeqStackMain.c.obj
+
+.PHONY : Stack&Queue/SeqStackMain.obj
+
+# target to build an object file
+Stack&Queue/SeqStackMain.c.obj:
+	$(MAKE) -f CMakeFiles\seqStack.dir\build.make "CMakeFiles/seqStack.dir/Stack&Queue/SeqStackMain.c.obj"
+.PHONY : Stack&Queue/SeqStackMain.c.obj
+
+Stack&Queue/SeqStackMain.i: Stack&Queue/SeqStackMain.c.i
+
+.PHONY : Stack&Queue/SeqStackMain.i
+
+# target to preprocess a source file
+Stack&Queue/SeqStackMain.c.i:
+	$(MAKE) -f CMakeFiles\seqStack.dir\build.make "CMakeFiles/seqStack.dir/Stack&Queue/SeqStackMain.c.i"
+.PHONY : Stack&Queue/SeqStackMain.c.i
+
+Stack&Queue/SeqStackMain.s: Stack&Queue/SeqStackMain.c.s
+
+.PHONY : Stack&Queue/SeqStackMain.s
+
+# target to generate assembly for a file
+Stack&Queue/SeqStackMain.c.s:
+	$(MAKE) -f CMakeFiles\seqStack.dir\build.make "CMakeFiles/seqStack.dir/Stack&Queue/SeqStackMain.c.s"
+.PHONY : Stack&Queue/SeqStackMain.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... seqStack
 	@echo ... seqList
 	@echo ... rebuild_cache
 	@echo ... linkList
@@ -265,6 +333,12 @@ help:
 	@echo ... LinearList/SeqList_main.obj
 	@echo ... LinearList/SeqList_main.i
 	@echo ... LinearList/SeqList_main.s
+	@echo ... Stack&Queue/SeqStack.obj
+	@echo ... Stack&Queue/SeqStack.i
+	@echo ... Stack&Queue/SeqStack.s
+	@echo ... Stack&Queue/SeqStackMain.obj
+	@echo ... Stack&Queue/SeqStackMain.i
+	@echo ... Stack&Queue/SeqStackMain.s
 .PHONY : help
 
 

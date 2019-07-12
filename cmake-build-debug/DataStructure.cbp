@@ -17,6 +17,44 @@
 					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="seqStack">
+				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/seqStack.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqStack"/>
+					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="seqStack/fast">
+				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/seqStack.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqStack/fast"/>
+					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="seqList">
 				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/seqList.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
@@ -131,6 +169,15 @@
 		</Unit>
 		<Unit filename="F:/Git/Clion/DataStructure/LinearList/SeqList_main.c">
 			<Option target="seqList"/>
+		</Unit>
+		<Unit filename="F:/Git/Clion/DataStructure/Stack&amp;Queue/SeqStack.c">
+			<Option target="seqStack"/>
+		</Unit>
+		<Unit filename="F:/Git/Clion/DataStructure/Stack&amp;Queue/SeqStack.h">
+			<Option target="seqStack"/>
+		</Unit>
+		<Unit filename="F:/Git/Clion/DataStructure/Stack&amp;Queue/SeqStackMain.c">
+			<Option target="seqStack"/>
 		</Unit>
 		<Unit filename="F:/Git/Clion/DataStructure/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
