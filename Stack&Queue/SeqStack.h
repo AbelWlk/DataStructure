@@ -17,6 +17,8 @@ void InitStack(SeqStack *seqStack);
 
 bool StackEmpty(SeqStack seqStack);
 
+bool StackOverFlow(SeqStack seqStack);
+
 bool Push(SeqStack seqStack, int data);
 
 int Pop(SeqStack seqStack);

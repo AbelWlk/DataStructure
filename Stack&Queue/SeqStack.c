@@ -15,6 +15,13 @@ bool StackEmpty(SeqStack seqStack) {
         return false;
 }
 
+bool StackOverFlow(SeqStack seqStack) {
+    if (seqStack->top == MaxSize - 1)
+        return true;
+    else
+        return false;
+}
+
 bool Push(SeqStack seqStack, int data) {
     if (seqStack->top == MaxSize - 1)
         return false;

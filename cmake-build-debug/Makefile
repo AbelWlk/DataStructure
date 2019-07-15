@@ -148,6 +148,19 @@ linkList/fast:
 	$(MAKE) -f CMakeFiles\linkList.dir\build.make CMakeFiles/linkList.dir/build
 .PHONY : linkList/fast
 
+#=============================================================================
+# Target rules for targets named seqQueue
+
+# Build rule for target.
+seqQueue: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 seqQueue
+.PHONY : seqQueue
+
+# fast build rule for target.
+seqQueue/fast:
+	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make CMakeFiles/seqQueue.dir/build
+.PHONY : seqQueue/fast
+
 LinearList/LinkList.obj: LinearList/LinkList.c.obj
 
 .PHONY : LinearList/LinkList.obj
@@ -256,6 +269,60 @@ LinearList/SeqList_main.c.s:
 	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/SeqList_main.c.s
 .PHONY : LinearList/SeqList_main.c.s
 
+Stack&Queue/SeqQueue.obj: Stack&Queue/SeqQueue.c.obj
+
+.PHONY : Stack&Queue/SeqQueue.obj
+
+# target to build an object file
+Stack&Queue/SeqQueue.c.obj:
+	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make "CMakeFiles/seqQueue.dir/Stack&Queue/SeqQueue.c.obj"
+.PHONY : Stack&Queue/SeqQueue.c.obj
+
+Stack&Queue/SeqQueue.i: Stack&Queue/SeqQueue.c.i
+
+.PHONY : Stack&Queue/SeqQueue.i
+
+# target to preprocess a source file
+Stack&Queue/SeqQueue.c.i:
+	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make "CMakeFiles/seqQueue.dir/Stack&Queue/SeqQueue.c.i"
+.PHONY : Stack&Queue/SeqQueue.c.i
+
+Stack&Queue/SeqQueue.s: Stack&Queue/SeqQueue.c.s
+
+.PHONY : Stack&Queue/SeqQueue.s
+
+# target to generate assembly for a file
+Stack&Queue/SeqQueue.c.s:
+	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make "CMakeFiles/seqQueue.dir/Stack&Queue/SeqQueue.c.s"
+.PHONY : Stack&Queue/SeqQueue.c.s
+
+Stack&Queue/SeqQueueMain.obj: Stack&Queue/SeqQueueMain.c.obj
+
+.PHONY : Stack&Queue/SeqQueueMain.obj
+
+# target to build an object file
+Stack&Queue/SeqQueueMain.c.obj:
+	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make "CMakeFiles/seqQueue.dir/Stack&Queue/SeqQueueMain.c.obj"
+.PHONY : Stack&Queue/SeqQueueMain.c.obj
+
+Stack&Queue/SeqQueueMain.i: Stack&Queue/SeqQueueMain.c.i
+
+.PHONY : Stack&Queue/SeqQueueMain.i
+
+# target to preprocess a source file
+Stack&Queue/SeqQueueMain.c.i:
+	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make "CMakeFiles/seqQueue.dir/Stack&Queue/SeqQueueMain.c.i"
+.PHONY : Stack&Queue/SeqQueueMain.c.i
+
+Stack&Queue/SeqQueueMain.s: Stack&Queue/SeqQueueMain.c.s
+
+.PHONY : Stack&Queue/SeqQueueMain.s
+
+# target to generate assembly for a file
+Stack&Queue/SeqQueueMain.c.s:
+	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make "CMakeFiles/seqQueue.dir/Stack&Queue/SeqQueueMain.c.s"
+.PHONY : Stack&Queue/SeqQueueMain.c.s
+
 Stack&Queue/SeqStack.obj: Stack&Queue/SeqStack.c.obj
 
 .PHONY : Stack&Queue/SeqStack.obj
@@ -320,6 +387,7 @@ help:
 	@echo ... seqList
 	@echo ... rebuild_cache
 	@echo ... linkList
+	@echo ... seqQueue
 	@echo ... edit_cache
 	@echo ... LinearList/LinkList.obj
 	@echo ... LinearList/LinkList.i
@@ -333,6 +401,12 @@ help:
 	@echo ... LinearList/SeqList_main.obj
 	@echo ... LinearList/SeqList_main.i
 	@echo ... LinearList/SeqList_main.s
+	@echo ... Stack&Queue/SeqQueue.obj
+	@echo ... Stack&Queue/SeqQueue.i
+	@echo ... Stack&Queue/SeqQueue.s
+	@echo ... Stack&Queue/SeqQueueMain.obj
+	@echo ... Stack&Queue/SeqQueueMain.i
+	@echo ... Stack&Queue/SeqQueueMain.s
 	@echo ... Stack&Queue/SeqStack.obj
 	@echo ... Stack&Queue/SeqStack.i
 	@echo ... Stack&Queue/SeqStack.s
