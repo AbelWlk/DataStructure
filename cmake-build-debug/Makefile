@@ -136,6 +136,19 @@ seqList/fast:
 .PHONY : seqList/fast
 
 #=============================================================================
+# Target rules for targets named application
+
+# Build rule for target.
+application: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 application
+.PHONY : application
+
+# fast build rule for target.
+application/fast:
+	$(MAKE) -f CMakeFiles\application.dir\build.make CMakeFiles/application.dir/build
+.PHONY : application/fast
+
+#=============================================================================
 # Target rules for targets named linkList
 
 # Build rule for target.
@@ -269,12 +282,40 @@ LinearList/SeqList_main.c.s:
 	$(MAKE) -f CMakeFiles\seqList.dir\build.make CMakeFiles/seqList.dir/LinearList/SeqList_main.c.s
 .PHONY : LinearList/SeqList_main.c.s
 
+Stack&Queue/Application.obj: Stack&Queue/Application.c.obj
+
+.PHONY : Stack&Queue/Application.obj
+
+# target to build an object file
+Stack&Queue/Application.c.obj:
+	$(MAKE) -f CMakeFiles\application.dir\build.make "CMakeFiles/application.dir/Stack&Queue/Application.c.obj"
+.PHONY : Stack&Queue/Application.c.obj
+
+Stack&Queue/Application.i: Stack&Queue/Application.c.i
+
+.PHONY : Stack&Queue/Application.i
+
+# target to preprocess a source file
+Stack&Queue/Application.c.i:
+	$(MAKE) -f CMakeFiles\application.dir\build.make "CMakeFiles/application.dir/Stack&Queue/Application.c.i"
+.PHONY : Stack&Queue/Application.c.i
+
+Stack&Queue/Application.s: Stack&Queue/Application.c.s
+
+.PHONY : Stack&Queue/Application.s
+
+# target to generate assembly for a file
+Stack&Queue/Application.c.s:
+	$(MAKE) -f CMakeFiles\application.dir\build.make "CMakeFiles/application.dir/Stack&Queue/Application.c.s"
+.PHONY : Stack&Queue/Application.c.s
+
 Stack&Queue/SeqQueue.obj: Stack&Queue/SeqQueue.c.obj
 
 .PHONY : Stack&Queue/SeqQueue.obj
 
 # target to build an object file
 Stack&Queue/SeqQueue.c.obj:
+	$(MAKE) -f CMakeFiles\application.dir\build.make "CMakeFiles/application.dir/Stack&Queue/SeqQueue.c.obj"
 	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make "CMakeFiles/seqQueue.dir/Stack&Queue/SeqQueue.c.obj"
 .PHONY : Stack&Queue/SeqQueue.c.obj
 
@@ -284,6 +325,7 @@ Stack&Queue/SeqQueue.i: Stack&Queue/SeqQueue.c.i
 
 # target to preprocess a source file
 Stack&Queue/SeqQueue.c.i:
+	$(MAKE) -f CMakeFiles\application.dir\build.make "CMakeFiles/application.dir/Stack&Queue/SeqQueue.c.i"
 	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make "CMakeFiles/seqQueue.dir/Stack&Queue/SeqQueue.c.i"
 .PHONY : Stack&Queue/SeqQueue.c.i
 
@@ -293,6 +335,7 @@ Stack&Queue/SeqQueue.s: Stack&Queue/SeqQueue.c.s
 
 # target to generate assembly for a file
 Stack&Queue/SeqQueue.c.s:
+	$(MAKE) -f CMakeFiles\application.dir\build.make "CMakeFiles/application.dir/Stack&Queue/SeqQueue.c.s"
 	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make "CMakeFiles/seqQueue.dir/Stack&Queue/SeqQueue.c.s"
 .PHONY : Stack&Queue/SeqQueue.c.s
 
@@ -330,6 +373,7 @@ Stack&Queue/SeqStack.obj: Stack&Queue/SeqStack.c.obj
 # target to build an object file
 Stack&Queue/SeqStack.c.obj:
 	$(MAKE) -f CMakeFiles\seqStack.dir\build.make "CMakeFiles/seqStack.dir/Stack&Queue/SeqStack.c.obj"
+	$(MAKE) -f CMakeFiles\application.dir\build.make "CMakeFiles/application.dir/Stack&Queue/SeqStack.c.obj"
 .PHONY : Stack&Queue/SeqStack.c.obj
 
 Stack&Queue/SeqStack.i: Stack&Queue/SeqStack.c.i
@@ -339,6 +383,7 @@ Stack&Queue/SeqStack.i: Stack&Queue/SeqStack.c.i
 # target to preprocess a source file
 Stack&Queue/SeqStack.c.i:
 	$(MAKE) -f CMakeFiles\seqStack.dir\build.make "CMakeFiles/seqStack.dir/Stack&Queue/SeqStack.c.i"
+	$(MAKE) -f CMakeFiles\application.dir\build.make "CMakeFiles/application.dir/Stack&Queue/SeqStack.c.i"
 .PHONY : Stack&Queue/SeqStack.c.i
 
 Stack&Queue/SeqStack.s: Stack&Queue/SeqStack.c.s
@@ -348,6 +393,7 @@ Stack&Queue/SeqStack.s: Stack&Queue/SeqStack.c.s
 # target to generate assembly for a file
 Stack&Queue/SeqStack.c.s:
 	$(MAKE) -f CMakeFiles\seqStack.dir\build.make "CMakeFiles/seqStack.dir/Stack&Queue/SeqStack.c.s"
+	$(MAKE) -f CMakeFiles\application.dir\build.make "CMakeFiles/application.dir/Stack&Queue/SeqStack.c.s"
 .PHONY : Stack&Queue/SeqStack.c.s
 
 Stack&Queue/SeqStackMain.obj: Stack&Queue/SeqStackMain.c.obj
@@ -386,6 +432,7 @@ help:
 	@echo ... seqStack
 	@echo ... seqList
 	@echo ... rebuild_cache
+	@echo ... application
 	@echo ... linkList
 	@echo ... seqQueue
 	@echo ... edit_cache
@@ -401,6 +448,9 @@ help:
 	@echo ... LinearList/SeqList_main.obj
 	@echo ... LinearList/SeqList_main.i
 	@echo ... LinearList/SeqList_main.s
+	@echo ... Stack&Queue/Application.obj
+	@echo ... Stack&Queue/Application.i
+	@echo ... Stack&Queue/Application.s
 	@echo ... Stack&Queue/SeqQueue.obj
 	@echo ... Stack&Queue/SeqQueue.i
 	@echo ... Stack&Queue/SeqQueue.s
