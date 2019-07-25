@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named binarytree
+
+# Build rule for target.
+binarytree: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 binarytree
+.PHONY : binarytree
+
+# fast build rule for target.
+binarytree/fast:
+	$(MAKE) -f CMakeFiles\binarytree.dir\build.make CMakeFiles/binarytree.dir/build
+.PHONY : binarytree/fast
+
+#=============================================================================
 # Target rules for targets named seqStack
 
 # Build rule for target.
@@ -173,6 +186,60 @@ seqQueue: cmake_check_build_system
 seqQueue/fast:
 	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make CMakeFiles/seqQueue.dir/build
 .PHONY : seqQueue/fast
+
+BinaryTree/BinaryTree.obj: BinaryTree/BinaryTree.c.obj
+
+.PHONY : BinaryTree/BinaryTree.obj
+
+# target to build an object file
+BinaryTree/BinaryTree.c.obj:
+	$(MAKE) -f CMakeFiles\binarytree.dir\build.make CMakeFiles/binarytree.dir/BinaryTree/BinaryTree.c.obj
+.PHONY : BinaryTree/BinaryTree.c.obj
+
+BinaryTree/BinaryTree.i: BinaryTree/BinaryTree.c.i
+
+.PHONY : BinaryTree/BinaryTree.i
+
+# target to preprocess a source file
+BinaryTree/BinaryTree.c.i:
+	$(MAKE) -f CMakeFiles\binarytree.dir\build.make CMakeFiles/binarytree.dir/BinaryTree/BinaryTree.c.i
+.PHONY : BinaryTree/BinaryTree.c.i
+
+BinaryTree/BinaryTree.s: BinaryTree/BinaryTree.c.s
+
+.PHONY : BinaryTree/BinaryTree.s
+
+# target to generate assembly for a file
+BinaryTree/BinaryTree.c.s:
+	$(MAKE) -f CMakeFiles\binarytree.dir\build.make CMakeFiles/binarytree.dir/BinaryTree/BinaryTree.c.s
+.PHONY : BinaryTree/BinaryTree.c.s
+
+BinaryTree/TreeMain.obj: BinaryTree/TreeMain.c.obj
+
+.PHONY : BinaryTree/TreeMain.obj
+
+# target to build an object file
+BinaryTree/TreeMain.c.obj:
+	$(MAKE) -f CMakeFiles\binarytree.dir\build.make CMakeFiles/binarytree.dir/BinaryTree/TreeMain.c.obj
+.PHONY : BinaryTree/TreeMain.c.obj
+
+BinaryTree/TreeMain.i: BinaryTree/TreeMain.c.i
+
+.PHONY : BinaryTree/TreeMain.i
+
+# target to preprocess a source file
+BinaryTree/TreeMain.c.i:
+	$(MAKE) -f CMakeFiles\binarytree.dir\build.make CMakeFiles/binarytree.dir/BinaryTree/TreeMain.c.i
+.PHONY : BinaryTree/TreeMain.c.i
+
+BinaryTree/TreeMain.s: BinaryTree/TreeMain.c.s
+
+.PHONY : BinaryTree/TreeMain.s
+
+# target to generate assembly for a file
+BinaryTree/TreeMain.c.s:
+	$(MAKE) -f CMakeFiles\binarytree.dir\build.make CMakeFiles/binarytree.dir/BinaryTree/TreeMain.c.s
+.PHONY : BinaryTree/TreeMain.c.s
 
 LinearList/LinkList.obj: LinearList/LinkList.c.obj
 
@@ -429,6 +496,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... binarytree
 	@echo ... seqStack
 	@echo ... seqList
 	@echo ... rebuild_cache
@@ -436,6 +504,12 @@ help:
 	@echo ... linkList
 	@echo ... seqQueue
 	@echo ... edit_cache
+	@echo ... BinaryTree/BinaryTree.obj
+	@echo ... BinaryTree/BinaryTree.i
+	@echo ... BinaryTree/BinaryTree.s
+	@echo ... BinaryTree/TreeMain.obj
+	@echo ... BinaryTree/TreeMain.i
+	@echo ... BinaryTree/TreeMain.s
 	@echo ... LinearList/LinkList.obj
 	@echo ... LinearList/LinkList.i
 	@echo ... LinearList/LinkList.s
