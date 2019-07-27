@@ -13,6 +13,11 @@ typedef struct BiTNode {
     int Data;
     struct BiTNode *Lchild, *Rchild;
 } BiTNode, *BiTree;
+typedef struct BiThrTNode {
+    int Data;
+    struct BiTNode *Lchild, *Rchild;
+    int ltag,rtag;
+} BiThrTNode, *BiThrTree;
 
 void PreOrder(BiTree T);
 

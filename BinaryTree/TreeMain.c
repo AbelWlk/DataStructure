@@ -251,35 +251,120 @@ int BTWidth(BiTree b) {
     }
     max = 0;
     i = 0;
-    k=1;
-    while (i<qu.rear)
-    {
-        n=0;
-        while (i<qu.rear&&qu.level[i]==k)
-        {
-            n++;i++;
+    k = 1;
+    while (i < qu.rear) {
+        n = 0;
+        while (i < qu.rear && qu.level[i] == k) {
+            n++;
+            i++;
         }
-        k=qu.level[i];
-        if(n>max) max=n;
+        k = qu.level[i];
+        if (n > max) max = n;
     }
     return max;
 }
 
 
 //15.满二叉树先序求后序
-void PreToPost(char *pre,int l1,int h1,char *post,int l2,int h2){
+void PreToPost(char *pre, int l1, int h1, char *post, int l2, int h2) {
     int half;
-    if(h1>=l1)
-    {
-        post[h2]=pre[l1];
-        half=(h1-l1)/2;
-        PreToPost(pre,l1+1,l1+half,post,l2,l2+half-1);
-        PreToPost(pre,l1+half+1,h1,post,l2+half,h2-1);
+    if (h1 >= l1) {
+        post[h2] = pre[l1];
+        half = (h1 - l1) / 2;
+        PreToPost(pre, l1 + 1, l1 + half, post, l2, l2 + half - 1);
+        PreToPost(pre, l1 + half + 1, h1, post, l2 + half, h2 - 1);
     }
 }
 
-//16.
+//16.二叉树叶节点练成单链表
+BiTNode *head = NULL, *pre = NULL;
 
+BiTNode *InOrder3(BiTree bt) {
+    if (bt) {
+        InOrder3(bt->Lchild);
+        if (bt->Lchild == NULL && bt->Rchild == NULL) {
+            if (pre == NULL) {
+                head = bt;
+            } else {
+                pre->Rchild = bt;
+                pre = bt;
+            }
+        }
+        InOrder3(bt->Lchild);
+        pre->Lchild = NULL;
+    }
+    return head;
+}
+
+//17.判断两棵二叉树是否相似
+int similar(BiTree t1, BiTree t2) {
+    int lefts, rights;
+    if (t1 == NULL && t2 == NULL)
+        return 1;
+    else if (t1 == NULL || t2 == NULL)
+        return 0;
+    else {
+        lefts = similar(t1->Lchild, t2->Lchild);
+        rights = similar(t1->Rchild, t2->Rchild);
+        return lefts && rights;
+    }
+}
+
+
+//18.中序线索二叉树里指定节点在在后序的前驱节点的算法
+BiThrTree InPostPre(BiThrTree t, BiThrTree p) {
+    BiThrTree q;
+    if (p->rtag == 0)
+        q = p->Rchild;
+    else if (p->ltag == 0)
+        q = p->Lchild;
+    else if (p->Lchild == NULL)
+        q = NULL;
+    else {
+        while (p->ltag == 1 && p->Lchild != NULL)
+            p = p->Lchild;
+        if (p->ltag == 0)
+            q = p->Lchild;
+        else
+            q = NULL;
+    }
+    return q;
+}
+
+//19.
+int wpl_PreOrder(BiTree root, int deep) {
+    static int wpl = 0;
+    if (root->Lchild == NULL && root->Rchild == NULL)
+        wpl += deep * root->Data;
+    if (root->Lchild != NULL)
+        wpl_PreOrder(root->Lchild, deep + 1);
+    if (root->Rchild != NULL)
+        wpl_PreOrder(root->Rchild, deep + 1);
+    return wpl;
+}
+
+int WPL(BiTree root) {
+    return wpl_PreOrder(root, 0);
+}
+
+
+//20.
+void BtreeToExp(BiTree root, int deep) {
+    if (root == NULL) return;
+    else if (root->Lchild == NULL && root->Rchild == NULL)
+        printf("%d\n", root->Data);
+    else {
+        if (deep > 1) printf("(");
+        BtreeToExp(root->Lchild, deep + 1);
+        printf("%d\n", root->Data);
+        BtreeToExp(root->Rchild, deep + 1);
+        if (deep > 1) printf(")");
+    }
+}
+
+void Btree(BiTree root) {
+    BtreeToExp(root, 1);
+}
 
 int main() {
 
