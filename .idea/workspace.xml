@@ -54,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BinaryTree/TreeMain.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="365" column="24" selection-start-line="365" selection-start-column="24" selection-end-line="365" selection-end-column="24" />
+            <state relative-caret-position="544">
+              <caret line="442" column="97" selection-start-line="442" selection-start-column="97" selection-end-line="442" selection-end-column="97" />
               <folding>
                 <element signature="e#38#61#0" expanded="true" />
               </folding>
@@ -66,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BinaryTree/BinaryTree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="285">
+              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="e#110#128#0" expanded="true" />
               </folding>
@@ -110,8 +110,9 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
+    <option name="x" value="-14" />
+    <option name="y" value="2" />
+    <option name="width" value="978" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectId" id="1OVTAPx9KGlGtO3eEeEjgafGYaZ" />
@@ -123,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,16 +132,10 @@
               <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="LinearList" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,7 +242,8 @@
       <workItem from="1564095313251" duration="31000" />
       <workItem from="1564144114360" duration="210000" />
       <workItem from="1564144367110" duration="8320000" />
-      <workItem from="1564233156532" duration="2505000" />
+      <workItem from="1564233156532" duration="2651000" />
+      <workItem from="1564752650401" duration="3104000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1562062310888</created>
@@ -367,17 +364,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564153041031</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="二叉树遍历:finish">
+      <created>1564236771243</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1564236771243</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11035000" />
+    <option name="totallyTimeSpent" value="14285000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="840" extended-state="0" />
+    <frame x="-11" y="2" width="782" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17427386" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17403315" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32918397" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -471,7 +475,8 @@
     <MESSAGE value="栈&amp;队列应用：完成" />
     <MESSAGE value="二叉树：部分" />
     <MESSAGE value="二叉树遍历：部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="二叉树遍历：部分" />
+    <MESSAGE value="二叉树遍历:finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="二叉树遍历:finish" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -504,6 +509,16 @@
     <entry file="file://$PROJECT_DIR$/LinearList/LinkList_main.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/BinaryTree/BinaryTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="e#110#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LinearList/LinkList.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
@@ -511,20 +526,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BinaryTree/BinaryTree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#110#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BinaryTree/TreeMain.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="365" column="24" selection-start-line="365" selection-start-column="24" selection-end-line="365" selection-end-column="24" />
+        <state relative-caret-position="544">
+          <caret line="442" column="97" selection-start-line="442" selection-start-column="97" selection-end-line="442" selection-end-column="97" />
           <folding>
             <element signature="e#38#61#0" expanded="true" />
           </folding>

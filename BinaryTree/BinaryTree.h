@@ -15,9 +15,15 @@ typedef struct BiTNode {
 } BiTNode, *BiTree;
 typedef struct BiThrTNode {
     int Data;
-    struct BiTNode *Lchild, *Rchild;
+    struct BiThrTNode *Lchild, *Rchild;
     int ltag,rtag;
 } BiThrTNode, *BiThrTree;
+
+typedef struct BiTCountNode {
+    int Data;
+    struct BiTCountNode *Lchild, *Rchild;
+    int count;
+} BiTCountNode, *BiTCountTree;
 
 void PreOrder(BiTree T);
 

@@ -366,6 +366,85 @@ void Btree(BiTree root) {
     BtreeToExp(root, 1);
 }
 
+//06.判断是否二叉排序树
+int predt = -32767;
+
+int JudgeBST(BiTree bt) {
+    int b1, b2;
+    if (bt == NULL)
+        return 1;
+    else {
+        b1 = JudgeBST((bt->Lchild);
+        if (b1 == 0 || predt >= bt->Data)
+            return 0;
+        predt = bt->Data;
+        b2 = JudgeBST(bt->Rchild);
+        return b2;
+    }
+}
+
+//07.指定节点二叉排序树的层次
+int level(BiTree bt, BiTNode *p) {
+    int n = 0;
+    BiTree t = bt;
+    if (bt != NULL) {
+        n++;
+        while (t->Data != p->Data) {
+            if (t->Data < p->Data)
+                t = t->Rchild;
+            else
+                t = t->Lchild;
+            n++;
+        }
+    }
+    return n;
+}
+
+//08.判断平衡二叉树
+void Judge_AVL(BiTree bt, int *balance, int *h) {
+    int bl = 0, br = 0, hl = 0, hr = 0;
+    if (bt == NULL) {
+        *h = 0;
+        *balance = 1;
+    } else if (bt->Lchild == NULL && bt->Rchild == NULL) {
+        *h = 1;
+        *balance = 1;
+    } else {
+        Judge_AVL(bt->Lchild, &bl, &hl);
+        Judge_AVL(bt->Rchild, &br, &hr);
+        *h = (hl > hr ? hl : hr) + 1;
+        if (abs(hl - hr) < 2)
+            *balance = bl && br;
+        else
+            *balance = 0;
+    }
+}
+
+//10.输出二叉排序树中所有不小于K的关键字
+void OutPut(BiTree bt, int k) {
+    if (bt == NULL)
+        return;
+    if (bt->Rchild != NULL)
+        OutPut(bt->Rchild, k);
+    if (bt->Data >= k)
+        printf("%d\n", bt->Data);
+    if (bt->Lchild != NULL)
+        OutPut(bt->Lchild, k);
+}
+
+BiTCountTree search_Small(BiTCountTree t, int k) {
+    if (k < 1 || k > t->count) return NULL;
+    if (t->Lchild == NULL) {
+        if (k == 1) return t;
+        else return search_Small(t->Rchild, k - 1);
+    } else {
+        if (t->Lchild->count == k - 1) return t;
+        if (t->Lchild->count > k - 1) return search_Small(t->Lchild, k);
+        if (t->Lchild->count < k - 1) return search_Small(t->Rchild, k - (t->Lchild->count + 1));
+    }
+
+}
+
 int main() {
 
 
