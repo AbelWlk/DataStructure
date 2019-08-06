@@ -255,6 +255,44 @@
 					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="graph">
+				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/graph.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph"/>
+					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph/fast">
+				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/graph.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph/fast"/>
+					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option type="4"/>
@@ -274,6 +312,15 @@
 		</Unit>
 		<Unit filename="F:/Git/Clion/DataStructure/BinaryTree/TreeMain.c">
 			<Option target="binarytree"/>
+		</Unit>
+		<Unit filename="F:/Git/Clion/DataStructure/Graph/ALGraph.c">
+			<Option target="graph"/>
+		</Unit>
+		<Unit filename="F:/Git/Clion/DataStructure/Graph/ALGraph.h">
+			<Option target="graph"/>
+		</Unit>
+		<Unit filename="F:/Git/Clion/DataStructure/Graph/graphMain.c">
+			<Option target="graph"/>
 		</Unit>
 		<Unit filename="F:/Git/Clion/DataStructure/LinearList/LinkList.c">
 			<Option target="linkList"/>

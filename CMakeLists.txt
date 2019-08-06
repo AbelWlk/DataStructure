@@ -12,6 +12,7 @@ set(seqStack Stack&Queue/SeqStackMain.c Stack&Queue/SeqStack.c)
 set(seqQueue Stack&Queue/SeqQueueMain.c Stack&Queue/SeqQueue.c)
 set(application Stack&Queue/Application.c Stack&Queue/SeqStack.c Stack&Queue/SeqQueue.c)
 set(binarytree BinaryTree/TreeMain.c BinaryTree/BinaryTree.c)
+set(graph Graph/graphMain.c Graph/ALGraph.c)
 
 
 add_executable(seqList ${seqList})
@@ -20,3 +21,4 @@ add_executable(seqStack ${seqStack})
 add_executable(seqQueue ${seqQueue})
 add_executable(application ${application})
 add_executable(binarytree ${binarytree})
+add_executable(graph ${graph})

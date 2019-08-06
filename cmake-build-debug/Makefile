@@ -187,6 +187,19 @@ seqQueue/fast:
 	$(MAKE) -f CMakeFiles\seqQueue.dir\build.make CMakeFiles/seqQueue.dir/build
 .PHONY : seqQueue/fast
 
+#=============================================================================
+# Target rules for targets named graph
+
+# Build rule for target.
+graph: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 graph
+.PHONY : graph
+
+# fast build rule for target.
+graph/fast:
+	$(MAKE) -f CMakeFiles\graph.dir\build.make CMakeFiles/graph.dir/build
+.PHONY : graph/fast
+
 BinaryTree/BinaryTree.obj: BinaryTree/BinaryTree.c.obj
 
 .PHONY : BinaryTree/BinaryTree.obj
@@ -240,6 +253,60 @@ BinaryTree/TreeMain.s: BinaryTree/TreeMain.c.s
 BinaryTree/TreeMain.c.s:
 	$(MAKE) -f CMakeFiles\binarytree.dir\build.make CMakeFiles/binarytree.dir/BinaryTree/TreeMain.c.s
 .PHONY : BinaryTree/TreeMain.c.s
+
+Graph/ALGraph.obj: Graph/ALGraph.c.obj
+
+.PHONY : Graph/ALGraph.obj
+
+# target to build an object file
+Graph/ALGraph.c.obj:
+	$(MAKE) -f CMakeFiles\graph.dir\build.make CMakeFiles/graph.dir/Graph/ALGraph.c.obj
+.PHONY : Graph/ALGraph.c.obj
+
+Graph/ALGraph.i: Graph/ALGraph.c.i
+
+.PHONY : Graph/ALGraph.i
+
+# target to preprocess a source file
+Graph/ALGraph.c.i:
+	$(MAKE) -f CMakeFiles\graph.dir\build.make CMakeFiles/graph.dir/Graph/ALGraph.c.i
+.PHONY : Graph/ALGraph.c.i
+
+Graph/ALGraph.s: Graph/ALGraph.c.s
+
+.PHONY : Graph/ALGraph.s
+
+# target to generate assembly for a file
+Graph/ALGraph.c.s:
+	$(MAKE) -f CMakeFiles\graph.dir\build.make CMakeFiles/graph.dir/Graph/ALGraph.c.s
+.PHONY : Graph/ALGraph.c.s
+
+Graph/graphMain.obj: Graph/graphMain.c.obj
+
+.PHONY : Graph/graphMain.obj
+
+# target to build an object file
+Graph/graphMain.c.obj:
+	$(MAKE) -f CMakeFiles\graph.dir\build.make CMakeFiles/graph.dir/Graph/graphMain.c.obj
+.PHONY : Graph/graphMain.c.obj
+
+Graph/graphMain.i: Graph/graphMain.c.i
+
+.PHONY : Graph/graphMain.i
+
+# target to preprocess a source file
+Graph/graphMain.c.i:
+	$(MAKE) -f CMakeFiles\graph.dir\build.make CMakeFiles/graph.dir/Graph/graphMain.c.i
+.PHONY : Graph/graphMain.c.i
+
+Graph/graphMain.s: Graph/graphMain.c.s
+
+.PHONY : Graph/graphMain.s
+
+# target to generate assembly for a file
+Graph/graphMain.c.s:
+	$(MAKE) -f CMakeFiles\graph.dir\build.make CMakeFiles/graph.dir/Graph/graphMain.c.s
+.PHONY : Graph/graphMain.c.s
 
 LinearList/LinkList.obj: LinearList/LinkList.c.obj
 
@@ -503,6 +570,7 @@ help:
 	@echo ... application
 	@echo ... linkList
 	@echo ... seqQueue
+	@echo ... graph
 	@echo ... edit_cache
 	@echo ... BinaryTree/BinaryTree.obj
 	@echo ... BinaryTree/BinaryTree.i
@@ -510,6 +578,12 @@ help:
 	@echo ... BinaryTree/TreeMain.obj
 	@echo ... BinaryTree/TreeMain.i
 	@echo ... BinaryTree/TreeMain.s
+	@echo ... Graph/ALGraph.obj
+	@echo ... Graph/ALGraph.i
+	@echo ... Graph/ALGraph.s
+	@echo ... Graph/graphMain.obj
+	@echo ... Graph/graphMain.i
+	@echo ... Graph/graphMain.s
 	@echo ... LinearList/LinkList.obj
 	@echo ... LinearList/LinkList.i
 	@echo ... LinearList/LinkList.s
