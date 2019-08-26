@@ -8,364 +8,364 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="binarytree">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/binarytree.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/binarytree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarytree"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarytree"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="binarytree/fast">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/binarytree.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/binarytree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarytree/fast"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarytree/fast"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="seqStack">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/seqStack.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/seqStack.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqStack"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqStack"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="seqStack/fast">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/seqStack.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/seqStack.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqStack/fast"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqStack/fast"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="seqList">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/seqList.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/seqList.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqList"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqList"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="seqList/fast">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/seqList.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/seqList.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqList/fast"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqList/fast"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="application">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/application.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/application.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 application"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 application"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="application/fast">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/application.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/application.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 application/fast"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 application/fast"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="linkList">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/linkList.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/linkList.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 linkList"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 linkList"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="linkList/fast">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/linkList.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/linkList.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 linkList/fast"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 linkList/fast"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="seqQueue">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/seqQueue.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/seqQueue.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqQueue"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqQueue"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="seqQueue/fast">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/seqQueue.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/seqQueue.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqQueue/fast"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 seqQueue/fast"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="graph">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/graph.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/graph.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="graph/fast">
-				<Option output="F:/Git/Clion/DataStructure/cmake-build-debug/graph.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option output="E:/Git/Clion/DataStructure/cmake-build-debug/graph.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Git/Clion/DataStructure"/>
+					<Add directory="E:/Git/Clion/DataStructure"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="D:/Program Files/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph/fast"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph/fast"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="F:/Git/Clion/DataStructure/cmake-build-debug"/>
+				<Option working_dir="E:/Git/Clion/DataStructure/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;F:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;E:/Git/Clion/DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="F:/Git/Clion/DataStructure/BinaryTree/BinaryTree.c">
+		<Unit filename="E:/Git/Clion/DataStructure/BinaryTree/BinaryTree.c">
 			<Option target="binarytree"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/BinaryTree/BinaryTree.h">
+		<Unit filename="E:/Git/Clion/DataStructure/BinaryTree/BinaryTree.h">
 			<Option target="binarytree"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/BinaryTree/TreeMain.c">
+		<Unit filename="E:/Git/Clion/DataStructure/BinaryTree/TreeMain.c">
 			<Option target="binarytree"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/Graph/ALGraph.c">
+		<Unit filename="E:/Git/Clion/DataStructure/Graph/ALGraph.c">
 			<Option target="graph"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/Graph/ALGraph.h">
+		<Unit filename="E:/Git/Clion/DataStructure/Graph/ALGraph.h">
 			<Option target="graph"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/Graph/graphMain.c">
+		<Unit filename="E:/Git/Clion/DataStructure/Graph/graphMain.c">
 			<Option target="graph"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/LinearList/LinkList.c">
+		<Unit filename="E:/Git/Clion/DataStructure/LinearList/LinkList.c">
 			<Option target="linkList"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/LinearList/LinkList.h">
+		<Unit filename="E:/Git/Clion/DataStructure/LinearList/LinkList.h">
 			<Option target="linkList"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/LinearList/LinkList_main.c">
+		<Unit filename="E:/Git/Clion/DataStructure/LinearList/LinkList_main.c">
 			<Option target="linkList"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/LinearList/SeqList.c">
+		<Unit filename="E:/Git/Clion/DataStructure/LinearList/SeqList.c">
 			<Option target="seqList"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/LinearList/SeqList.h">
+		<Unit filename="E:/Git/Clion/DataStructure/LinearList/SeqList.h">
 			<Option target="seqList"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/LinearList/SeqList_main.c">
+		<Unit filename="E:/Git/Clion/DataStructure/LinearList/SeqList_main.c">
 			<Option target="seqList"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/Stack&amp;Queue/Application.c">
+		<Unit filename="E:/Git/Clion/DataStructure/Stack&amp;Queue/Application.c">
 			<Option target="application"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/Stack&amp;Queue/SeqQueue.c">
+		<Unit filename="E:/Git/Clion/DataStructure/Stack&amp;Queue/SeqQueue.c">
 			<Option target="application"/>
 			<Option target="seqQueue"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/Stack&amp;Queue/SeqQueue.h">
+		<Unit filename="E:/Git/Clion/DataStructure/Stack&amp;Queue/SeqQueue.h">
 			<Option target="application"/>
 			<Option target="seqQueue"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/Stack&amp;Queue/SeqQueueMain.c">
+		<Unit filename="E:/Git/Clion/DataStructure/Stack&amp;Queue/SeqQueueMain.c">
 			<Option target="seqQueue"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/Stack&amp;Queue/SeqStack.c">
+		<Unit filename="E:/Git/Clion/DataStructure/Stack&amp;Queue/SeqStack.c">
 			<Option target="seqStack"/>
 			<Option target="application"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/Stack&amp;Queue/SeqStack.h">
+		<Unit filename="E:/Git/Clion/DataStructure/Stack&amp;Queue/SeqStack.h">
 			<Option target="seqStack"/>
 			<Option target="application"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/Stack&amp;Queue/SeqStackMain.c">
+		<Unit filename="E:/Git/Clion/DataStructure/Stack&amp;Queue/SeqStackMain.c">
 			<Option target="seqStack"/>
 		</Unit>
-		<Unit filename="F:/Git/Clion/DataStructure/CMakeLists.txt">
+		<Unit filename="E:/Git/Clion/DataStructure/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

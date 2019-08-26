@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\Git\Clion\DataStructure
+CMAKE_SOURCE_DIR = E:\Git\Clion\DataStructure
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\Git\Clion\DataStructure\cmake-build-debug
+CMAKE_BINARY_DIR = E:\Git\Clion\DataStructure\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/seqList.dir/depend.make
@@ -59,30 +59,30 @@ include CMakeFiles/seqList.dir/flags.make
 CMakeFiles/seqList.dir/LinearList/SeqList_main.c.obj: CMakeFiles/seqList.dir/flags.make
 CMakeFiles/seqList.dir/LinearList/SeqList_main.c.obj: CMakeFiles/seqList.dir/includes_C.rsp
 CMakeFiles/seqList.dir/LinearList/SeqList_main.c.obj: ../LinearList/SeqList_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/seqList.dir/LinearList/SeqList_main.c.obj"
-	"D:\Program Files\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\seqList.dir\LinearList\SeqList_main.c.obj   -c F:\Git\Clion\DataStructure\LinearList\SeqList_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/seqList.dir/LinearList/SeqList_main.c.obj"
+	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\seqList.dir\LinearList\SeqList_main.c.obj   -c E:\Git\Clion\DataStructure\LinearList\SeqList_main.c
 
 CMakeFiles/seqList.dir/LinearList/SeqList_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/seqList.dir/LinearList/SeqList_main.c.i"
-	"D:\Program Files\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Git\Clion\DataStructure\LinearList\SeqList_main.c > CMakeFiles\seqList.dir\LinearList\SeqList_main.c.i
+	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Git\Clion\DataStructure\LinearList\SeqList_main.c > CMakeFiles\seqList.dir\LinearList\SeqList_main.c.i
 
 CMakeFiles/seqList.dir/LinearList/SeqList_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/seqList.dir/LinearList/SeqList_main.c.s"
-	"D:\Program Files\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Git\Clion\DataStructure\LinearList\SeqList_main.c -o CMakeFiles\seqList.dir\LinearList\SeqList_main.c.s
+	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Git\Clion\DataStructure\LinearList\SeqList_main.c -o CMakeFiles\seqList.dir\LinearList\SeqList_main.c.s
 
 CMakeFiles/seqList.dir/LinearList/SeqList.c.obj: CMakeFiles/seqList.dir/flags.make
 CMakeFiles/seqList.dir/LinearList/SeqList.c.obj: CMakeFiles/seqList.dir/includes_C.rsp
 CMakeFiles/seqList.dir/LinearList/SeqList.c.obj: ../LinearList/SeqList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/seqList.dir/LinearList/SeqList.c.obj"
-	"D:\Program Files\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\seqList.dir\LinearList\SeqList.c.obj   -c F:\Git\Clion\DataStructure\LinearList\SeqList.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/seqList.dir/LinearList/SeqList.c.obj"
+	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\seqList.dir\LinearList\SeqList.c.obj   -c E:\Git\Clion\DataStructure\LinearList\SeqList.c
 
 CMakeFiles/seqList.dir/LinearList/SeqList.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/seqList.dir/LinearList/SeqList.c.i"
-	"D:\Program Files\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Git\Clion\DataStructure\LinearList\SeqList.c > CMakeFiles\seqList.dir\LinearList\SeqList.c.i
+	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Git\Clion\DataStructure\LinearList\SeqList.c > CMakeFiles\seqList.dir\LinearList\SeqList.c.i
 
 CMakeFiles/seqList.dir/LinearList/SeqList.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/seqList.dir/LinearList/SeqList.c.s"
-	"D:\Program Files\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Git\Clion\DataStructure\LinearList\SeqList.c -o CMakeFiles\seqList.dir\LinearList\SeqList.c.s
+	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Git\Clion\DataStructure\LinearList\SeqList.c -o CMakeFiles\seqList.dir\LinearList\SeqList.c.s
 
 # Object files for target seqList
 seqList_OBJECTS = \
@@ -98,7 +98,7 @@ seqList.exe: CMakeFiles/seqList.dir/build.make
 seqList.exe: CMakeFiles/seqList.dir/linklibs.rsp
 seqList.exe: CMakeFiles/seqList.dir/objects1.rsp
 seqList.exe: CMakeFiles/seqList.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable seqList.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable seqList.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\seqList.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -111,6 +111,6 @@ CMakeFiles/seqList.dir/clean:
 .PHONY : CMakeFiles/seqList.dir/clean
 
 CMakeFiles/seqList.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" F:\Git\Clion\DataStructure F:\Git\Clion\DataStructure F:\Git\Clion\DataStructure\cmake-build-debug F:\Git\Clion\DataStructure\cmake-build-debug F:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles\seqList.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\Git\Clion\DataStructure E:\Git\Clion\DataStructure E:\Git\Clion\DataStructure\cmake-build-debug E:\Git\Clion\DataStructure\cmake-build-debug E:\Git\Clion\DataStructure\cmake-build-debug\CMakeFiles\seqList.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/seqList.dir/depend
 
